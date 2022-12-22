@@ -16,6 +16,7 @@
 		92E8A22C2954D53C001972D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92E8A22B2954D53C001972D2 /* README.md */; };
 		92E8A22E2954D7A0001972D2 /* AzureWebPubSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8A22D2954D7A0001972D2 /* AzureWebPubSub.swift */; };
 		92E8A2372954E755001972D2 /* SecureAPIKeys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */; };
+		92E8A2392954EE80001972D2 /* SampleScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92E8A2382954EE80001972D2 /* SampleScreen.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		92E8A22D2954D7A0001972D2 /* AzureWebPubSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureWebPubSub.swift; sourceTree = "<group>"; };
 		92E8A2352954E23D001972D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecureAPIKeys.xcconfig; sourceTree = "<group>"; };
+		92E8A2382954EE80001972D2 /* SampleScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SampleScreen.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				92E8A22B2954D53C001972D2 /* README.md */,
+				92E8A2382954EE80001972D2 /* SampleScreen.jpg */,
 				92E8A1C729509F84001972D2 /* Subscriber */,
 				92E8A1C629509F84001972D2 /* Products */,
 			);
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E8A2392954EE80001972D2 /* SampleScreen.jpg in Resources */,
 				92E8A22C2954D53C001972D2 /* README.md in Resources */,
 				92E8A1D029509F85001972D2 /* Preview Assets.xcassets in Resources */,
 				92E8A2372954E755001972D2 /* SecureAPIKeys.xcconfig in Resources */,

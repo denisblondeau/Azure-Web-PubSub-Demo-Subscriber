@@ -118,16 +118,7 @@ enum Request  {
                 return ["type": "sendToGroup", "group": group, "ackId": ackId, "noEcho": noEcho, "dataType": dataType.rawValue, "data": data]
             }
             
-            
         }
     }
-    
 }
 
-
-//"type": "sendToGroup",
-//   "group": "<group_name>",
-//   "ackId" : 1,
-//   "noEcho": true|false,
-//   "dataType" : "json|text|binary",
-//   "data": {}, // data can be string or valid json token depending on the dataType

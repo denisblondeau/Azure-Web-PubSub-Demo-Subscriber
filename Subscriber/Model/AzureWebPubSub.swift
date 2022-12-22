@@ -20,15 +20,6 @@ struct AckError: Decodable {
     let message: String
 }
 
-//{
-//    "type": "ack",
-//    "ackId": 1, // The ack id for the request to ack
-//    "success": false, // true or false
-//    "error": {
-//        "name": "Forbidden|InternalServerError|Duplicate",
-//        "message": "<error_detail>"
-//    }
-//}
 struct Message: Decodable {
     let type: String
     let from: String

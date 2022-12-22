@@ -15,6 +15,7 @@
 		92E8A1E12950A21E001972D2 /* SubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8A1E02950A21E001972D2 /* SubModel.swift */; };
 		92E8A22C2954D53C001972D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92E8A22B2954D53C001972D2 /* README.md */; };
 		92E8A22E2954D7A0001972D2 /* AzureWebPubSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8A22D2954D7A0001972D2 /* AzureWebPubSub.swift */; };
+		92E8A2372954E755001972D2 /* SecureAPIKeys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		92E8A1E02950A21E001972D2 /* SubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModel.swift; sourceTree = "<group>"; };
 		92E8A22B2954D53C001972D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		92E8A22D2954D7A0001972D2 /* AzureWebPubSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureWebPubSub.swift; sourceTree = "<group>"; };
+		92E8A2352954E23D001972D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecureAPIKeys.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		92E8A1C729509F84001972D2 /* Subscriber */ = {
 			isa = PBXGroup;
 			children = (
+				92E8A2352954E23D001972D2 /* Info.plist */,
+				92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */,
 				92E8A1C829509F84001972D2 /* SubscriberApp.swift */,
 				92E8A1CA29509F84001972D2 /* ContentView.swift */,
 				92E8A1E22950A229001972D2 /* Model */,
@@ -154,6 +159,7 @@
 			files = (
 				92E8A22C2954D53C001972D2 /* README.md in Resources */,
 				92E8A1D029509F85001972D2 /* Preview Assets.xcassets in Resources */,
+				92E8A2372954E755001972D2 /* SecureAPIKeys.xcconfig in Resources */,
 				92E8A1CD29509F85001972D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +183,7 @@
 /* Begin XCBuildConfiguration section */
 		92E8A1D229509F85001972D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -237,6 +244,7 @@
 		};
 		92E8A1D329509F85001972D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E8A2362954E755001972D2 /* SecureAPIKeys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -302,8 +310,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Subscriber/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Denis Blondeau";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -330,8 +339,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Subscriber/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Denis Blondeau";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

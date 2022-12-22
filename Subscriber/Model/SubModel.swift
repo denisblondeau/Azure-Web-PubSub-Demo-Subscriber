@@ -18,6 +18,12 @@ final class SubModel: NSObject, ObservableObject {
     // Set to true when webSocket is active.
     private var isOpen = false
     
+    // Host name from your Web PubSub Service keys (in "Settings") - Microsft Azure portal (portal.azure.com)
+    private var hostname = ""
+    // secret = Access key (primary or secondary) from your Web PubSub Service keys (in "Settings") - Microsft Azure portal (portal.azure.com)
+    private var secret = ""
+    
+    
     // The next two variables have to match the variables in your Publisher.
     private var hub = "DemoHub"
     private var group = "DemoGroup"
@@ -34,6 +40,16 @@ final class SubModel: NSObject, ObservableObject {
         super.init()
         
         NotificationCenter.default.addObserver(self, selector: #selector(appWillTerminate(notification:)), name: NSApplication.willTerminateNotification, object: nil)
+        
+        // If hostname is empty, try to get it from the local secure key file - file that is not distributed with this project.
+        if hostname.isEmpty {
+            hostname = Bundle.main.infoDictionary?["AZURE_HOSTNAME"] as? String ?? ""
+        }
+        
+        // If secret is empty, try to get it from the local secure key file - file that is not distributed with this project.
+        if secret.isEmpty {
+            secret = Bundle.main.infoDictionary?["AZURE_ACCESS_KEY"] as? String ?? ""
+        }
         
         openWebSocket()
     }

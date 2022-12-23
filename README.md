@@ -7,7 +7,7 @@ This is the Subscriber - You also need the Publisher to run this demo: https://g
 
 To get this demo working, before running it, you need to:
 - have a Microsoft Azure account.
-- create a Web PubSub service within the Azure portal. This one servive will handle communications between the Publisher and the Subscriber.
+- create a Web PubSub service within the Azure portal. This one service will handle communications between the Publisher and the Subscriber.
 - add your Web PubSub service's hostname and access key to the Subscriber model (SubModel.swift) - this is required to generate the required JSON web token and connect to your Web PubSub host.
 
 Start the Publisher; it will automatically connect to the Web PubSub service's hub (DemoHub). 

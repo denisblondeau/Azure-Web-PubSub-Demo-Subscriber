@@ -1,7 +1,7 @@
 # Azure Web PubSub Demo - Subscriber
 
 
-Swift/SwiftUI MacOS demo of Microsoft's Azure Web Pub Sub service. For more information, see: https://azure.microsoft.com/en-ca/products/web-pubsub/#overview
+Swift/SwiftUI MacOS demo of Microsoft's Azure Web PubSub service. For more information, see: https://azure.microsoft.com/en-ca/products/web-pubsub/#overview
 
 This is the Subscriber - You also need the Publisher to run this demo: https://github.com/denisblondeau/AzureWebPubSubDemo-Publisher
 

@@ -5,8 +5,7 @@
 //  Created by Denis Blondeau on 2022-12-19.
 //
 
-import Foundation
-
+// Reference: https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol
 
 struct Ack: Decodable {
     let type: String
@@ -36,14 +35,6 @@ enum Subprotocol: String {
     case protobufReliable = "protobuf.reliable.webpubsub.azure.v1"
 }
 
-/*
- Role                               Permission
- Not specified                      The client can send event requests.
- webpubsub.joinLeaveGroup           The client can join/leave any group.
- webpubsub.sendToGroup              The client can publish messages to any group.
- webpubsub.joinLeaveGroup.<group>   The client can join/leave group <group>.
- webpubsub.sendToGroup.<group>      The client can publish messages to group <group>.
-*/
 enum Permission {
     case joinLeaveGroup(String)
     case sendToGroup(String)
@@ -51,7 +42,7 @@ enum Permission {
     var role: String {
         
         switch self {
-            
+                      
         case .joinLeaveGroup(let group):
             if group.isEmpty {
                 return "webpubsub.joinLeaveGroup"
